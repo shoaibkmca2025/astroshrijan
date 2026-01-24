@@ -2,7 +2,7 @@ import { Service, ConsultationType, Testimonial } from './types';
 
 export const BRAND_NAME = "AstroSrijan";
 
-export const ASTROLOGER_IMAGE = "https://images.unsplash.com/photo-1566125882500-87e10f726cdc?q=80&w=1000&auto=format&fit=crop";
+export const ASTROLOGER_IMAGE = "/shrijan_photo.png";
 
 export const SERVICES: Service[] = [
   {
