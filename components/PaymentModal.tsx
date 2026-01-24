@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { BookingDetails } from '../types';
+import { sendBookingNotification } from '../utils/emailService';
 
 interface PaymentModalProps {
   isOpen: boolean;
@@ -66,6 +67,7 @@ const PaymentModal: React.FC<PaymentModalProps> = ({ isOpen, onClose, bookingDet
             // Re-verify the internal flag. If the session wasn't legitimate, it STAYS failed.
             if (sessionVerified.current) {
               setStatus('success');
+              sendBookingNotification(bookingDetails, 'payment_success');
             } else {
               setErrorType('not_found');
               setStatus('failed');

@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { BookingDetails } from '../types';
+import { sendBookingNotification } from '../utils/emailService';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -38,6 +39,8 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, initialDat
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Send email notification for booking request
+    sendBookingNotification(form, 'booking_request');
     onSubmit(form);
   };
 
