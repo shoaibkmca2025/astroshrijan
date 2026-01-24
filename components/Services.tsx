@@ -1,8 +1,9 @@
+
 import React from 'react';
-import { SERVICES } from '../frontend/constants';
+import { SERVICES } from '../constants';
 
 interface ServicesProps {
-  onBook: (id: string, name: string, price: number) => void;
+  onBook: (id: string, name: string, price: number, link: string) => void;
 }
 
 const Services: React.FC<ServicesProps> = ({ onBook }) => {
@@ -10,7 +11,7 @@ const Services: React.FC<ServicesProps> = ({ onBook }) => {
     <section id="services" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-4xl text-indigo-900 font-serif">Celestial Services</h2>
+          <h2 className="text-4xl text-indigo-900 font-serif font-bold">Celestial Services</h2>
           <p className="text-slate-600">Comprehensive Vedic solutions tailored for every aspect of your life journey.</p>
           <div className="w-24 h-1 gold-gradient mx-auto rounded-full"></div>
         </div>
@@ -39,8 +40,8 @@ const Services: React.FC<ServicesProps> = ({ onBook }) => {
                 <div className="flex items-center justify-between pt-6 border-t border-slate-50">
                   <div className="text-2xl font-bold text-indigo-900">₹{service.price}</div>
                   <button 
-                    onClick={() => onBook(service.id, service.name, service.price)}
-                    className="px-6 py-2.5 rounded-xl deep-blue-gradient text-white font-bold text-sm shadow-lg hover:shadow-indigo-200 transition-all"
+                    onClick={() => onBook(service.id, service.name, service.price, service.paymentLink)}
+                    className="px-6 py-2.5 rounded-xl deep-blue-gradient text-white font-bold text-sm shadow-lg hover:shadow-indigo-200 transition-all cursor-pointer active:scale-95"
                   >
                     Book Now
                   </button>

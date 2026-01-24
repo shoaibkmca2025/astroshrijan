@@ -2,7 +2,7 @@ import { Service, ConsultationType, Testimonial } from './types';
 
 export const BRAND_NAME = "AstroSrijan";
 
-export const ASTROLOGER_IMAGE = "/shrijan_photo.png";
+export const ASTROLOGER_IMAGE = "https://images.unsplash.com/photo-1566125882500-87e10f726cdc?q=80&w=1000&auto=format&fit=crop";
 
 export const SERVICES: Service[] = [
   {
@@ -11,7 +11,8 @@ export const SERVICES: Service[] = [
     description: 'Detailed analysis of your Janam Kundali to understand life strengths and challenges.',
     price: 2500,
     features: ['Planetary positions', 'Dasha periods', 'House analysis', 'Life predictions'],
-    icon: 'fa-chart-pie'
+    icon: 'fa-chart-pie',
+    paymentLink: 'https://rzp.io/rzp/birthchart'
   },
   {
     id: 'marriage',
@@ -19,7 +20,8 @@ export const SERVICES: Service[] = [
     description: 'Comprehensive Kundali matching for marriage to ensure harmonious life.',
     price: 3500,
     features: ['Guna Milan (36 pts)', 'Manglik Dosha', 'Nadi checking', 'Compatibility report'],
-    icon: 'fa-heart'
+    icon: 'fa-heart',
+    paymentLink: 'https://rzp.io/rzp/marriagecompatibility'
   },
   {
     id: 'career',
@@ -27,7 +29,8 @@ export const SERVICES: Service[] = [
     description: 'Analysis for career choices, job changes, and professional growth.',
     price: 2800,
     features: ['Suitable career paths', 'Timing for moves', 'Success prediction', 'Remedies'],
-    icon: 'fa-briefcase'
+    icon: 'fa-briefcase',
+    paymentLink: 'https://rzp.io/rzp/oqR8aPj'
   },
   {
     id: 'gemstone',
@@ -35,7 +38,8 @@ export const SERVICES: Service[] = [
     description: 'Scientific analysis for recommending appropriate gemstones for weak planets.',
     price: 2200,
     features: ['Strength analysis', 'Gem identification', 'Metal/Weight spec', 'Wearing method'],
-    icon: 'fa-gem'
+    icon: 'fa-gem',
+    paymentLink: 'https://rzp.io/rzp/iJAsiqD8'
   },
   {
     id: 'vastu',
@@ -43,7 +47,8 @@ export const SERVICES: Service[] = [
     description: 'Vastu analysis for property to ensure positive energy and prosperity.',
     price: 4000,
     features: ['Energy analysis', 'Directional fixes', 'Vastu remedies', 'Site consultation'],
-    icon: 'fa-home'
+    icon: 'fa-home',
+    paymentLink: 'https://rzp.io/rzp/4EN7a6l'
   },
   {
     id: 'numerology',
@@ -51,7 +56,8 @@ export const SERVICES: Service[] = [
     description: 'Analysis based on name and birth date for life path guidance.',
     price: 1800,
     features: ['Life path number', 'Destiny number', 'Name correction', 'Lucky numbers'],
-    icon: 'fa-sort-numeric-up'
+    icon: 'fa-sort-numeric-up',
+    paymentLink: 'https://rzp.io/rzp/YILZFaLR'
   }
 ];
 
@@ -62,7 +68,8 @@ export const CONSULTATIONS: ConsultationType[] = [
     description: 'Urgent questions or specific concerns.',
     price: 2100,
     duration: '10 Minutes',
-    icon: 'fa-bolt'
+    icon: 'fa-bolt',
+    paymentLink: 'https://rzp.io/rzp/oqR8aPj'
   },
   {
     id: 'single',
@@ -70,7 +77,8 @@ export const CONSULTATIONS: ConsultationType[] = [
     description: 'Detailed answer to one specific question.',
     price: 1100,
     duration: 'Written/Audio',
-    icon: 'fa-question-circle'
+    icon: 'fa-question-circle',
+    paymentLink: 'https://rzp.io/rzp/iJAsiqD8'
   },
   {
     id: 'extended',
@@ -78,7 +86,8 @@ export const CONSULTATIONS: ConsultationType[] = [
     description: 'Comprehensive session for multiple concerns.',
     price: 4500,
     duration: '30 Minutes',
-    icon: 'fa-hourglass-half'
+    icon: 'fa-hourglass-half',
+    paymentLink: 'https://rzp.io/rzp/birthchart'
   }
 ];
 

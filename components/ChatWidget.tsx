@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { GoogleGenAI } from "@google/genai";
-import { BRAND_NAME } from '../frontend/constants';
+import { BRAND_NAME } from '../constants';
 
 interface Message {
   id: string;

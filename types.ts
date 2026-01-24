@@ -6,6 +6,7 @@ export interface Service {
   price: number;
   features: string[];
   icon: string;
+  paymentLink: string;
 }
 
 export interface ConsultationType {
@@ -15,6 +16,7 @@ export interface ConsultationType {
   price: number;
   duration: string;
   icon: string;
+  paymentLink: string;
 }
 
 export interface Testimonial {
@@ -31,6 +33,7 @@ export interface BookingDetails {
   serviceId: string;
   serviceName: string;
   price: number;
+  paymentLink: string;
   name: string;
   email: string;
   phone: string;

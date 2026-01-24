@@ -27,8 +27,8 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const openBooking = (serviceId: string, serviceName: string, price: number) => {
-    setBookingData({ serviceId, serviceName, price });
+  const openBooking = (serviceId: string, serviceName: string, price: number, paymentLink: string) => {
+    setBookingData({ serviceId, serviceName, price, paymentLink });
     setActiveModal('booking');
   };
 
@@ -43,10 +43,10 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen selection:bg-amber-200 selection:text-indigo-900">
-      <Header scrolled={scrolled} onBookNow={() => openBooking('general', 'General Consultation', 2100)} />
+      <Header scrolled={scrolled} onBookNow={() => openBooking('general', 'General Consultation', 2100, 'https://rzp.io/rzp/oqR8aPj')} />
       
       <main>
-        <Hero onBookNow={() => openBooking('general', 'General Consultation', 2100)} />
+        <Hero onBookNow={() => openBooking('general', 'General Consultation', 2100, 'https://rzp.io/rzp/oqR8aPj')} />
         <AstroAIInsight />
         <About />
         <Services onBook={openBooking} />
@@ -73,13 +73,9 @@ const App: React.FC = () => {
         />
       )}
       
-      {/* Offline Notification */}
       <OfflineStatus />
-      
-      {/* Live Chat Widget */}
       <ChatWidget />
 
-      {/* Attractive Automation: Scroll to top button */}
       <button 
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className={`fixed bottom-8 right-28 w-12 h-12 rounded-xl bg-white text-indigo-900 border border-slate-200 shadow-xl transition-all duration-500 transform ${scrolled ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-20 scale-50 pointer-events-none'} flex items-center justify-center hover:scale-110 active:scale-95 z-50 group`}

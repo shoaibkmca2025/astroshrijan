@@ -1,5 +1,5 @@
 import React from 'react';
-import { BRAND_NAME } from '../frontend/constants';
+import { BRAND_NAME } from '../constants';
 
 const Footer: React.FC = () => {
   return (
@@ -83,4 +83,6 @@ const Footer: React.FC = () => {
       </div>
     </footer>
   );
-};export default Footer;
+};
+
+export default Footer;

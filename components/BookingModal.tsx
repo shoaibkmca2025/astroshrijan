@@ -14,6 +14,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, initialDat
     serviceId: initialData.serviceId || '',
     serviceName: initialData.serviceName || '',
     price: initialData.price || 0,
+    paymentLink: initialData.paymentLink || '',
     name: '',
     email: '',
     phone: '',
@@ -29,7 +30,8 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose, initialDat
         ...prev, 
         serviceId: initialData.serviceId!,
         serviceName: initialData.serviceName!,
-        price: initialData.price! 
+        price: initialData.price!,
+        paymentLink: initialData.paymentLink || ''
       }));
     }
   }, [initialData]);

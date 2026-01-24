@@ -13,7 +13,7 @@ const About: React.FC = () => {
             <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl border-4 border-slate-50 group bg-slate-950 min-h-[500px] flex items-center justify-center">
               <img 
                 src={ASTROLOGER_IMAGE}
-                alt="Srijan Sharma Photo"
+                alt="Vedic Heritage"
                 className="w-full h-auto max-h-[800px] aspect-[4/5] object-cover object-center hover:scale-105 transition-transform duration-1000 block"
               />
             </div>

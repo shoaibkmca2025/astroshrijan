@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({ onBookNow }) => {
               <div className="relative rounded-[40px] overflow-hidden border-2 border-white/10 shadow-[0_0_80px_rgba(0,0,0,0.8)] float-animation bg-slate-800 aspect-[4/5] flex items-center justify-center">
                 <img 
                   src={ASTROLOGER_IMAGE} 
-                  alt="Srijan Sharma Photo"
+                  alt="Pandit Srijan Sharma"
                   loading="eager"
                   className="w-full h-full object-cover object-center block transition-transform duration-700 group-hover:scale-[1.02]"
                 />

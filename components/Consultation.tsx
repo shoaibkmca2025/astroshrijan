@@ -1,8 +1,9 @@
+
 import React from 'react';
-import { CONSULTATIONS } from '../frontend/constants';
+import { CONSULTATIONS } from '../constants';
 
 interface ConsultationProps {
-  onBook: (id: string, name: string, price: number) => void;
+  onBook: (id: string, name: string, price: number, link: string) => void;
 }
 
 const Consultation: React.FC<ConsultationProps> = ({ onBook }) => {
@@ -15,7 +16,7 @@ const Consultation: React.FC<ConsultationProps> = ({ onBook }) => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-4xl text-white font-serif">Booking Options</h2>
+          <h2 className="text-4xl text-white font-serif font-bold">Booking Options</h2>
           <p className="text-indigo-200">Choose the format that fits your curiosity and urgency.</p>
           <div className="w-24 h-1 gold-gradient mx-auto rounded-full"></div>
         </div>
@@ -35,8 +36,8 @@ const Consultation: React.FC<ConsultationProps> = ({ onBook }) => {
                   <div className="text-indigo-300 text-xs uppercase tracking-widest font-bold">{item.duration}</div>
                 </div>
                 <button 
-                  onClick={() => onBook(item.id, item.title, item.price)}
-                  className="w-full py-4 rounded-xl bg-white text-indigo-900 font-bold hover:bg-amber-400 transition-colors shadow-xl"
+                  onClick={() => onBook(item.id, item.title, item.price, item.paymentLink)}
+                  className="w-full py-4 rounded-xl bg-white text-indigo-900 font-bold hover:bg-amber-400 transition-colors shadow-xl cursor-pointer active:scale-95"
                 >
                   Confirm Slot
                 </button>
