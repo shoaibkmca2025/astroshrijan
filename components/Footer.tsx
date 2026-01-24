@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <i className="fas fa-envelope text-amber-400"></i>
-                <a href="mailto:consult@astrosrijan.com" className="hover:text-white">consult@astrosrijan.com</a>
+                <a href="mailto:consult@astrosrijan.com" className="hover:text-white">astroshrijan@gmail.com</a>
               </li>
             </ul>
           </div>
