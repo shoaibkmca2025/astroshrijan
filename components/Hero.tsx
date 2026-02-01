@@ -66,7 +66,7 @@ const Hero: React.FC<HeroProps> = ({ onBookNow }) => {
                   src={ASTROLOGER_IMAGE} 
                   alt="Pandit Srijan Sharma"
                   loading="eager"
-                  className="w-full h-full object-cover object-center block transition-transform duration-700 group-hover:scale-[1.02]"
+                  className="w-full h-full object-cover object-top block transition-transform duration-700 group-hover:scale-[1.02]"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
               </div>
