@@ -78,7 +78,7 @@ export const CONSULTATIONS: ConsultationType[] = [
     price: 1100,
     duration: 'Written/Audio',
     icon: 'fa-question-circle',
-    paymentLink: 'https://rzp.io/rzp/zITCSEOZ'
+    paymentLink: 'https://rzp.io/rzp/xlHj6PT'
   },
   {
     id: 'extended',
@@ -87,7 +87,7 @@ export const CONSULTATIONS: ConsultationType[] = [
     price: 4500,
     duration: '30 Minutes',
     icon: 'fa-hourglass-half',
-    paymentLink: 'https://rzp.io/rzp/xlHj6PT'
+    paymentLink: 'https://rzp.io/rzp/zITCSEOZ'
   }
 ];
 
