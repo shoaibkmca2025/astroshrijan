@@ -69,7 +69,7 @@ export const CONSULTATIONS: ConsultationType[] = [
     price: 2100,
     duration: '10 Minutes',
     icon: 'fa-bolt',
-    paymentLink: 'https://rzp.io/rzp/oqR8aPj'
+    paymentLink: 'https://rzp.io/rzp/Lf0Djwz'
   },
   {
     id: 'single',
@@ -78,7 +78,7 @@ export const CONSULTATIONS: ConsultationType[] = [
     price: 1100,
     duration: 'Written/Audio',
     icon: 'fa-question-circle',
-    paymentLink: 'https://rzp.io/rzp/iJAsiqD8'
+    paymentLink: 'https://rzp.io/rzp/zITCSEOZ'
   },
   {
     id: 'extended',
@@ -87,7 +87,7 @@ export const CONSULTATIONS: ConsultationType[] = [
     price: 4500,
     duration: '30 Minutes',
     icon: 'fa-hourglass-half',
-    paymentLink: 'https://rzp.io/rzp/birthchart'
+    paymentLink: 'https://rzp.io/rzp/xlHj6PT'
   }
 ];
 
